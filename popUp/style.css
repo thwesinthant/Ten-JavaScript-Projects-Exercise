@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.082);
+}
+button {
+  background: rebeccapurple;
+  box-shadow: 1px 1px 2px black;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.87rem;
+  padding: 13px;
+  border-radius: 10px;
+  border: white(0, 0, 0, 0.114) 2px solid;
+  outline: none;
+}
+.popUp-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.popUp-container.active {
+  display: flex;
+}
+.popUp {
+  background: rebeccapurple;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  padding: 3em 2em;
+  position: relative;
+  width: 420px;
+  color: white;
+}
+.popUp h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.popUp p {
+  font-size: 0.9rem;
+}
+.popUp button {
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-weight: 550;
+  color: white(0, 0, 0);
+  background: rebeccapurple;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  border: none;
+  box-shadow: none;
+}
